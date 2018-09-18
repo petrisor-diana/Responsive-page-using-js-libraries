@@ -1,0 +1,223 @@
+
+:root {
+    font-family: "Source Sans Light",sans-serif;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+   
+}
+ol {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+.menu-container {
+    background-color: #00a2ad;
+    padding: 10px;
+    color:#fff;
+    font-size: 18px;
+}
+.menu-options {
+    padding-top: 3px;
+    padding-right: 20px;
+    display: flex;
+    font-weight: 500;
+    cursor: pointer;
+}
+.second-menu {
+    position: absolute;
+    top: 75px;
+    right: 7%;
+    height: 40px;
+    z-index: 2;
+    color: #fff;
+    font-size: 23px;
+    line-height: 25px;
+}
+.second-menu-page {
+    position: absolute;
+    top: 37px;
+    right: 7%;
+    color: #fff;
+    font-size: 23px;
+    line-height: 25px;
+}
+.logo {
+    left: 5%;
+    width: fit-content;
+    height: 60px;
+    transform: translateY(-50%);
+    margin-top: 17px;
+}
+.burger {
+    display: none;
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    z-index: 2;
+}
+.burger > div {
+    width: 35px;
+    background-color: white;
+    height: 7px;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+.menu-options > div {
+    padding: 0 10px;
+}
+.menu-options > div:hover {
+    text-decoration-line: underline;
+}
+.menu-social {
+    padding-right: 9%;
+    display: flex;
+}
+.menu-social img {
+    padding-right: 10px;
+}
+#container {
+    z-index: 1;
+}
+#container .slider img {
+    width: 100%;
+}
+#container .slick-slider .slick-dots {
+    bottom: 25%;
+    text-align: left;
+    margin: 15px 35px;
+}
+.slick-dots li button:before {
+    font-size: 10px !important;
+}
+.slick-dots li.slick-active button:before {
+    color: #00728d !important;
+}
+#slick-slide-control03 {
+    display: none;
+}
+#text-slider {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    line-height: 64px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%,-50%);
+}
+#text .support {
+    font-size: 38px;
+}
+.button-next .arrow {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+.menu-container-second-page {
+    background-color: #435363;
+    color:#fff;
+    height: 15%;
+    position: sticky;
+    top: 0;
+}
+.company-info p {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.2;
+    background-image: linear-gradient(#435363,#0299aa,#009dad, #26a9bb );
+    padding: 10%;
+    color: #fff;
+    padding-bottom: 0%;
+    height: -webkit-fill-available;
+    margin: 0px;
+}
+#section-1, #section-2 {
+    position: relative;
+    height: 100vh;
+}
+.hide {
+    display:none;
+}
+.menu-animation {
+    transition: transform 0.5s;
+    text-align: center;  
+    width: 100%;
+    transform: translateY(-100%);
+    height: 0;
+    background-color: #435363;
+    color: #fff;
+    font-weight: bold;
+}
+.menu-animation button {
+    position: absolute;
+    top: 35px;
+    right: 70px;
+} 
+.open-active {
+    transform: translateY(0);
+    text-align: center;
+    height: 100vh;   
+    width: 100%;
+    padding-top: 25%; 
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .second-menu, .second-menu-page {
+        display: none;
+    }
+    .burger {
+        display: initial;
+    }
+    .menu-container-second-page{
+      height: 12%;
+    }
+    #text-slider .connect {
+      font-size: 28px ;
+      line-height: 34px;
+    }
+    #text-slider .support {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    .company-info p {
+        font-size: 26px !important;
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+ .menu-options.second-menu, .menu-options.second-menu-page {        
+     font-size: 18px !important;
+ }
+ .second-menu.logo , .second-menu-page.logo {
+     width: 300px;
+ }
+  #text-slider .connect {
+    font-size: 32px ;
+    line-height: 36px;
+  }
+  #text-slider .support {
+      font-size: 28px;
+      line-height: 36px;
+  }
+  .company-info {
+    font-size: 21px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .second-menu.logo , .second-menu-page.logo {
+        height: 70px !important;
+    }
+    .menu-container-second-page{
+        height: 100px  !important;
+      }
+}
+@media screen and (min-height: 300px) and (max-height: 700px) {
+ 
+  }
+

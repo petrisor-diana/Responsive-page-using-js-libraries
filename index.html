@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css" />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>Pharmacyclics</title>
+</head>
+
+<body>
+    <div id="drop-animation" class="menu-animation">
+        <div>Who we are</div>
+        <div>Our approach</div>
+        <div>Our science</div>
+        <button id='btnOne'> x </button>
+    </div>
+    <section id="section-1">
+        <nav class="menu-container">
+            <ol>
+                <li class="menu-social">
+                    <img src="./assets/facebook.png" alt="facebook">
+                    <img src="./assets/linkedin.png" alt="linkedin">
+                </li>
+                <li class="menu-options">
+                    <div>Careers</div>|
+                    <div>PressRoom</div>|
+                    <div>Contact Us</div>
+                </li>
+                <img class="second-menu logo" src="./assets/img2.jpg" alt="slider-img">
+                <li class="menu-options second-menu">
+                    <div>Who we are</div>
+                    <div>Our approach</div>
+                    <div>Our science</div>
+                </li>
+                <li class="menu-options burger" id="burgerOne">
+                    <div class="sk-cube"></div>
+                    <div class="sk-cube"></div>
+                    <div class="sk-cube"></div>
+                </li>
+            </ol>
+        </nav>
+
+        <div id="container">
+            <div class="slider">
+                <div>
+                    <img class="slider-img" src="https://pbs.twimg.com/profile_banners/1633994564/1513014769/1500x500" alt="slider-img">
+                </div>
+                <div>
+                    <img class="slider-img" src="./assets/img1.jpg" alt="slider-img">
+                </div>
+                <div>
+                    <img class="slider-img" src="https://www.theneweconomy.com/wp-content/uploads/2015/03/Abbvie-buys-Pharmacyclics-820x615.jpg"
+                        alt="slider-img">
+                </div>
+            </div>
+            <div id="text-slider">
+                <p class="connect">Connecting people to care </p>
+                <hr class="line">
+                <p class="support"> Supporting information about large message </p>
+            </div>
+            <div class="button-next">
+                <a href="#section-2">
+                    <img class="arrow" src="./assets/arrow.png">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-2">
+        <nav class="menu-container-second-page">
+            <ol>
+                <img class="second-menu-page logo" src="./assets/img2.jpg" alt="slider-img">
+                <li class="menu-options second-menu-page">
+                    <div>Who we are</div>
+                    <div>Our approach</div>
+                    <div>Our science</div>
+                </li>
+                <li class="menu-options burger" id="burgerTwo">
+                    <div class="sk-cube"></div>
+                    <div class="sk-cube"></div>
+                    <div class="sk-cube"></div>
+                </li>
+            </ol>
+        </nav>
+        <div class="company-info">
+            <p>Pharmacyclics is an AbbVie company based in Silicon Valley, California and focused on developing and commercializing
+                small-molecule medicines for the treatment of cancers and immune-mediated diseases for which there is great
+                unmet medical need. We seek to discover innovative therapies to improve standards of care and strive to help
+                our patients rediscover the Magic of Normal.</p>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript" src="./javascript/dom.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+
+        $('.slider').slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            adaptiveHeight: true
+        });
+
+    </script>
+
+</body>
+
+</html>
