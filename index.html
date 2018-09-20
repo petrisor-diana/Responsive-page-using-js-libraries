@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css" />
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <title>Pharmacyclics</title>
 </head>
@@ -65,7 +64,7 @@
                 <p class="support"> Supporting information about large message </p>
             </div>
             <div class="button-next">
-                <a href="#section-2">
+                <a data-scroll href="#section-2">
                     <img class="arrow" src="./assets/arrow.png">
                 </a>
             </div>
@@ -73,7 +72,7 @@
     </section>
 
     <section id="section-2">
-        <nav class="menu-container-second-page">
+        <nav id="menu-container-second-page">
             <ol>
                 <img class="second-menu-page logo" src="./assets/img2.jpg" alt="slider-img">
                 <li class="menu-options second-menu-page">
@@ -102,6 +101,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
 
     <script type="text/javascript">
 
@@ -114,7 +115,13 @@
         });
 
     </script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1500,
+            easing: 'easeInQuad'
+        });
 
+    </script>
 </body>
 
 </html>

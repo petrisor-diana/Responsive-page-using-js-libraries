@@ -117,14 +117,16 @@ ol {
     position: absolute;
     top: 80%;
     left: 50%;
+    transform: translateX(-50%);
 }
-.menu-container-second-page {
+#menu-container-second-page {
     background-color: #435363;
     color:#fff;
     height: 15%;
     position: sticky;
     top: 0;
 }
+
 .company-info p {
     font-weight: 300;
     font-size: 32px;
@@ -143,6 +145,7 @@ ol {
 .hide {
     display:none;
 }
+
 .menu-animation {
     transition: transform 0.5s;
     text-align: center;  
@@ -163,17 +166,22 @@ ol {
     text-align: center;
     height: 100vh;   
     width: 100%;
-    padding-top: 25%; 
+    padding-top: 20%; 
     cursor: pointer;
+    line-height: 5;
 }
 @media screen and (max-width: 768px) {
+    .menu-container {
+        font-size: 15px;
+    }
     .second-menu, .second-menu-page {
         display: none;
     }
     .burger {
         display: initial;
+        top: 9%;
     }
-    .menu-container-second-page{
+    #menu-container-second-page{
       height: 12%;
     }
     #text-slider .connect {
@@ -213,7 +221,7 @@ ol {
     .second-menu.logo , .second-menu-page.logo {
         height: 70px !important;
     }
-    .menu-container-second-page{
+    #menu-container-second-page{
         height: 100px  !important;
       }
 }
