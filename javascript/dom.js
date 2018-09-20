@@ -20,7 +20,6 @@ function onclick() {
     sectionHide.forEach(el => el.classList.add('hide'));
     animation.classList.add('open-active');
 }
-
 function onBtnclick() {
     sectionHide.forEach(el => el.classList.remove('hide'));
     animation.classList.remove('open-active');
