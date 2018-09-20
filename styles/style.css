@@ -173,15 +173,16 @@ ol {
     .menu-container {
         font-size: 15px;
     }
-    .second-menu, .second-menu-page {
+    .second-menu, .second-menu-page, .menu-container .menu-social {
         display: none;
     }
     .burger {
         display: initial;
         top: 9%;
     }
-    #menu-container-second-page{
-      height: 12%;
+    #menu-container-second-page {
+        position: relative;
+        height: 12%;
     }
     #text-slider .connect {
       font-size: 28px ;
@@ -193,6 +194,7 @@ ol {
     }
     .company-info p {
         font-size: 26px !important;
+        padding: 12%;
       }
 }
 
@@ -224,7 +226,5 @@ ol {
         height: 100px  !important;
       }
 }
-@media screen and (min-height: 300px) and (max-height: 700px) {
- 
-  }
+
 
