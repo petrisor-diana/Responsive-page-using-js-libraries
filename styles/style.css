@@ -170,10 +170,13 @@ ol {
     color: #fff;
     font-weight: bold;
 }
-.menu-animation button {
+#btnOne {
     position: absolute;
     top: 35px;
     right: 70px;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
 } 
 .open-active {
     transform: translateY(0);
@@ -296,7 +299,7 @@ ol {
       }
       .col {
         padding-right: 1px !important;
-        min-height: 300px;
+        min-height: 300px !important;
     }
      .col-padding-text h1 {
           font-size: 42px;
