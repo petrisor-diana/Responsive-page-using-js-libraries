@@ -5,12 +5,12 @@
 body {
     margin: 0;
     overflow-x: hidden;
-   
 }
 ol {
     display: flex;
     flex-direction: row-reverse;
     margin: 0;
+    list-style-type: none;
 }
 .menu-container {
     background-color: #00a2ad;
@@ -48,7 +48,7 @@ ol {
     width: fit-content;
     height: 60px;
     transform: translateY(-50%);
-    margin-top: 17px;
+    margin-top: 25px;
 }
 .burger {
     display: none;
@@ -64,18 +64,23 @@ ol {
     margin-top: 5px;
     border-radius: 2px;
 }
-.menu-options > div {
-    padding: 0 10px;
+.menu-options .option {
+    padding-right: 10px;
+    padding-left: 10px;
 }
-.menu-options > div:hover {
-    text-decoration-line: underline;
+.menu-options .menu-dropdown {
+    min-width: 140px;
+    text-align: center;
 }
 .menu-social {
     padding-right: 9%;
     display: flex;
+    cursor: pointer;
 }
 .menu-social img {
-    padding-right: 10px;
+    padding-right: 15px;
+    height: 33px;
+    width: 45px;
 }
 #container {
     z-index: 1;
@@ -111,13 +116,22 @@ ol {
 #text .support {
     font-size: 38px;
 }
-.button-next .arrow {
+.arrow {
     height: 55px;
     width: 55px;
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
+}
+.new-arrow {
+    height: 55px;
+    width: 55px;
+    transform: rotate(-90deg);
+    margin-bottom: 6%;
+    margin-left: 45%;
+    cursor: pointer;
 }
 #menu-container-second-page {
     background-color: #435363;
@@ -125,6 +139,7 @@ ol {
     height: 15%;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .company-info p {
     font-weight: 300;
@@ -133,8 +148,6 @@ ol {
     background-image: linear-gradient(#435363,#0299aa,#009dad, #26a9bb );
     padding: 10%;
     color: #fff;
-    padding-bottom: 0%;
-    height: -webkit-fill-available;
     margin: 0px;
 }
 #section-1, #section-2 {
@@ -144,7 +157,9 @@ ol {
 .hide {
     display:none;
 }
-
+.menu-container ol {
+     margin-bottom: 0;
+ }
 .menu-animation {
     transition: transform 0.5s;
     text-align: center;  
@@ -169,6 +184,86 @@ ol {
     cursor: pointer;
     line-height: 5;
 }
+.row {
+    margin-bottom: 50px;
+}
+#our-culture{
+    margin-top: 50px;
+}
+.container-fluid h1 {
+    color: #26a9bb;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+.container-fluid p {
+    font-size: 22px;
+    color: #435363;
+    flex: 3;
+}
+.color-one {
+    background-color: #ebecee;
+}
+#our-company {
+    background-image: url(https://notablelife.com/media/2015/09/what-doctors-say2.jpg);
+}
+.color-two {
+    background-color: #ebecee;
+}
+#imbruvica {
+    background-image: url(https://mota.ru/upload/wallpapers/source/2013/09/14/01/01/37307/pQ46VkcQD2.jpg);
+}
+.color-three {
+    background-color: #fffde8;
+}
+#team {
+    background-image: url(https://s3.amazonaws.com/wordpress-production/wp-content/uploads/2014/07/Employee-Engagement-Redbooth.jpg);
+}
+.col {
+    padding-left: 0px !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.col-padding {
+    padding-top: 4%;
+    padding-right: 6% !important;
+    padding-left: 4% !important;
+    display: flex;
+    flex-direction: column;
+}
+.col-padding-text {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.col-padding-text h1 {
+    font-size: 66px;
+}
+.col-padding-text p {
+    color: #26a9bb;
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 1.8;
+}
+.dropdown {
+    display: none;
+}
+.menu-dropdown:hover{
+    background-color: #fff;
+    color: #435363; 
+}
+.menu-dropdown:hover ul.dropdown {
+    display: block;
+    background-color: #fff;
+    color: #435363;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    line-height: 1.9;
+}
+.menu-dropdown ul.dropdown li {
+    display: block;
+} 
 @media screen and (max-width: 768px) {
     .menu-container {
         font-size: 15px;
@@ -196,8 +291,20 @@ ol {
         font-size: 26px !important;
         padding: 12%;
       }
-}
-
+      .new-arrow {
+          margin-top: 40px;
+      }
+      .col {
+        padding-right: 1px !important;
+        min-height: 300px;
+    }
+     .col-padding-text h1 {
+          font-size: 42px;
+     }
+     .col-padding-text p {
+        font-size: 22px;
+   }
+ }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
  .menu-options.second-menu, .menu-options.second-menu-page {        
      font-size: 18px !important;
@@ -216,14 +323,22 @@ ol {
   .company-info {
     font-size: 21px !important;
   }
+  .col {
+    min-height: 300px; 
+  }
 }
-
 @media screen and (min-width: 1200px) {
     .second-menu.logo , .second-menu-page.logo {
         height: 70px !important;
     }
     #menu-container-second-page{
         height: 100px  !important;
+      }
+      .menu-options .menu-dropdown {
+          min-width: 180px;
+      }
+      .row {
+          min-height: 450px;
       }
 }
 
