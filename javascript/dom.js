@@ -12,13 +12,14 @@ var burgerSecond = document.getElementById('burgerTwo');
 var sectionHide = document.querySelectorAll('section');
 var menuBtn = document.getElementById('btnOne');
 
-burgerFirst.addEventListener('click', onclick);
-burgerSecond.addEventListener('click', onclick);
+burgerFirst.addEventListener('click', onClick);
+burgerSecond.addEventListener('click', onClick);
 menuBtn.addEventListener('click', onBtnclick);
 
-function onclick() {
+function onClick() {
     sectionHide.forEach(el => el.classList.add('hide'));
     animation.classList.add('open-active');
+    console.log('hi')
 }
 function onBtnclick() {
     sectionHide.forEach(el => el.classList.remove('hide'));

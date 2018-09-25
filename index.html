@@ -41,10 +41,8 @@
                             <li>Hello</li>
                         </ul>
                     </div>
-                    <div class="menu-dropdown">Our approach
-                    </div>
-                    <div class="menu-dropdown">Our science
-                    </div>
+                    <div class="menu-dropdown">Our approach</div>
+                    <div class="menu-dropdown">Our science</div>
                 </li>
                 <li class="menu-options burger" id="burgerOne">
                     <div class="sk-cube"></div>
@@ -92,12 +90,10 @@
                             <li>Hello</li>
                         </ul>
                     </div>
-                    <div class="menu-dropdown">Our approach
-                    </div>
-                    <div class="menu-dropdown">Our science
-                    </div>
+                    <div class="menu-dropdown">Our approach</div>
+                    <div class="menu-dropdown">Our science</div>
                 </li>
-                <li class="menu-options burger" id="burgerTwo">
+                <li class="menu-options burger" id="burgerTwo" onclick="onClick()">
                     <div class="sk-cube"></div>
                     <div class="sk-cube"></div>
                     <div class="sk-cube"></div>
@@ -113,8 +109,7 @@
 
         <div id="our-culture" class="container-fluid">
             <div class="row color-one">
-                <div id="our-company" class="col col-xs-12 col-sm-6">
-                </div>
+                <div id="our-company" class="col col-xs-12 col-sm-6"></div>
                 <div class="col-padding col-xs-12 col-sm-6">
                     <h1>Our culture</h1>
                     <p>A group of dedicated people who are committed to provide solutions for human suffering. A group of dedicated
@@ -132,8 +127,7 @@
             </div>
 
             <div class="row color-two">
-                <div id="imbruvica" class="col col-xs-12 col-sm-6">
-                </div>
+                <div id="imbruvica" class="col col-xs-12 col-sm-6"></div>
                 <div class="col-padding col-xs-12 col-sm-6">
                     <h1>Imbruvica</h1>
                     <p>Introduce your text about the company here. Introduce your text about the company here. Introduce your
@@ -143,8 +137,7 @@
             </div>
 
             <div class="row color-three">
-                <div id="team" class="col col-xs-12 col-sm-6">
-                </div>
+                <div id="team" class="col col-xs-12 col-sm-6"></div>
                 <div class="col-padding col-xs-12 col-sm-6">
                     <h1>Join our team</h1>
                     <p>Introduce your text about the company here. Introduce your text about the company here. Introduce your
@@ -171,6 +164,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
+       // slider
         $('.slider').slick({
             arrows: false,
             dots: true,
@@ -178,9 +172,8 @@
             autoplaySpeed: 1000,
             adaptiveHeight: true
         });
-    </script>
-
-    <script>
+   
+       // smooth scroll
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 1500,
             easing: 'easeInQuad'
@@ -188,10 +181,9 @@
     </script>
 
     <script>
+        // sticky menu
         $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
-
         scrollIntervalID = setInterval(stickIt, 10);
-
 
         function stickIt() {
 
@@ -200,7 +192,6 @@
 
             if ($(window).scrollTop() >= (orgElementTop)) {
                 // scrolled past the original position; now only show the cloned, sticky element.
-
                 // Cloned element should always have same left position and width as original element.     
                 orgElement = $('.original');
                 coordsOrgElement = orgElement.offset();
@@ -214,8 +205,6 @@
                 $('.original').css('visibility', 'visible');
             }
         }
-
     </script>
 </body>
-
 </html>
